@@ -4,7 +4,7 @@ import './styles/main.css';
 
 const App = () => {
     return (
-        <h1>Hello Jonathan from Webpack using Babel and React</h1>
+        <h1>Hello from Webpack using Babel and React</h1>
     )
 }
 
