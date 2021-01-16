@@ -11,15 +11,13 @@ const config = {
     filename: "bundle.[hash].js",
     path: path.resolve(__dirname, "dist"),
   },
-  // watch: true,
+  devTool: "eval-cheap-source-map",
   devServer: {
     port: 3000,
     contentBase: path.resolve(__dirname, "dist"),
     hot: true,
   },
-  plugins: [
-    new HtmlWebpackPlugin({ template: "./src/index.html" }),
-  ],
+  plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
   module: {
     rules: [
       {
